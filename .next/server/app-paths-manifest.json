@@ -1,4 +1,4 @@
 {
-  "/feria-de-vinos/page": "app/feria-de-vinos/page.js",
-  "/page": "app/page.js"
+  "/page": "app/page.js",
+  "/feria-de-vinos/page": "app/feria-de-vinos/page.js"
 }

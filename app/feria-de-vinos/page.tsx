@@ -220,23 +220,6 @@ function WineModal({ wine, onClose }: ModalProps) {
           ¡Te salió...
         </p>
 
-        {/* wine emoji visual */}
-        {/* <div className="flex justify-center my-4">
-          <div
-            className="flex items-center justify-center rounded-2xl text-6xl"
-            style={{
-              width: 100,
-              height: 100,
-              background: `radial-gradient(circle at 30% 30%, ${wine.color}cc, #0A0A0A)`,
-              border: `1px solid ${GOLD}33`,
-              boxShadow: `0 0 24px ${wine.color}55`,
-            }}
-          >
-            🍷
-          </div>
-        </div> */}
-
-        {/* wine name */}
         <h2
           className="text-center font-bold text-2xl leading-tight mb-3"
           style={{
@@ -406,7 +389,7 @@ export default function WineWheel() {
       {/* ── Main content ── */}
       <div className="flex flex-col items-center w-full px-5 pt-2 pb-3 flex-1 min-h-0">
         {/* H1 */}
-        <img src="./bajada.png" alt="" style={{ maxHeight: '17vh', width: 'auto' }} />
+        <img src="./bajada.png" alt="" style={{ maxHeight: '20vh', width: 'auto' }} />
 
         {/* event info */}
         <p
