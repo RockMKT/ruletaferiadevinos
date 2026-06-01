@@ -185,7 +185,7 @@ interface ModalProps {
 
 function WineModal({ wine, onClose }: ModalProps) {
   const WA_LINK =
-    'https://wa.me/5491171540713?text=Hola!%20Quiero%20reservar%20para%20la%20Feria%20de%20Vinos';
+    'https://wa.me/5491171540713?text=Hola!%20Quiero%20reservar%20para%20la%20Feria%20de%20Vinos.%20%C2%BFMe%20envi%C3%A1s%20m%C3%A1s%20informaci%C3%B3n%3F';
 
   return (
     <div
@@ -380,12 +380,12 @@ export default function WineWheel() {
 
   return (
     <div
-      className="relative flex flex-col items-center min-h-screen w-full overflow-hidden"
-      style={{ background: '#0A0A0A', maxWidth: 430, margin: '0 auto' }}
+      className="relative flex flex-col items-center w-full overflow-hidden"
+      style={{ background: '#0A0A0A', maxWidth: 430, margin: '0 auto', height: '100dvh' }}
     >
       {/* ── Top bar ── */}
       <div
-        className="w-full flex items-center justify-center py-3 px-4"
+        className="w-full flex items-center justify-center py-3 px-4 shrink-0"
         style={{
           background: '#000',
           borderBottom: `1px solid ${GOLD}33`,
@@ -404,13 +404,13 @@ export default function WineWheel() {
       </div>
 
       {/* ── Main content ── */}
-      <div className="flex flex-col items-center w-full px-5 pt-2 pb-4">
+      <div className="flex flex-col items-center w-full px-5 pt-2 pb-3 flex-1 min-h-0">
         {/* H1 */}
-        <img src="./bajada.png" alt="" />
+        <img src="./bajada.png" alt="" style={{ maxHeight: '17vh', width: 'auto' }} />
 
         {/* event info */}
         <p
-          className="text-xs uppercase mb-4 text-center"
+          className="text-xs uppercase mb-2 text-center"
           style={{ color: '#fab915' }}
         >
           10 de Junio | A partir de las 19hs
@@ -418,7 +418,7 @@ export default function WineWheel() {
 
         {/* H2 */}
         <h2
-          className="text-xl italic tracking-widest font-semibold text-center mb-6"
+          className="text-lg italic tracking-widest font-semibold text-center mb-3"
           style={{
             fontFamily: '"majesti", Georgia, serif',
             color: '#fff',
@@ -458,7 +458,7 @@ export default function WineWheel() {
 
         {/* tap hint */}
         <div
-          className={`flex items-center gap-2 mt-5 text-sm ${
+          className={`flex items-center gap-2 mt-3 text-sm ${
             isSpinning ? 'opacity-0' : 'animate-pulse-soft'
           }`}
           style={{ color: '#ffffff88' }}
